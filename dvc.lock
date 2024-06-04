@@ -1,0 +1,17 @@
+schema: '2.0'
+stages:
+  load_data:
+    cmd: python src/load_data.py --config=params.yaml
+    deps:
+    - path: data_given/winequality.csv
+      md5: ccc8d3507eb151f53f760d36abdef888
+      size: 91998
+    - path: src/get_data.py
+      md5: 9d48e159cfd7646b02aff0315f615a67
+      size: 655
+    - path: src/load_data.py
+      md5: 0a2e32de44177e3a7536582ce895521c
+      size: 671
+    outs:
+    - path: data/raw/winequality.csv
+      size: 93598
