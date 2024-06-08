@@ -1,6 +1,5 @@
 #local packges install
--e
-
+-e .
 
 #trired party packeges
 dvc
@@ -9,3 +8,4 @@ scikit-learn
 pandas
 pytest
 tox
+flake8
